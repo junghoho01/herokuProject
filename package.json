@@ -1,0 +1,26 @@
+{
+  "name": "awesomenodepostgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "create": "node ./services/dbConnect createTables"
+  },
+  "engines": {
+    "node": ">=16.20.0"
+  },
+  "author": "jh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cloudinary": "^2.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "heroku": "^8.10.0",
+    "make-runnable": "^1.4.1",
+    "pg": "^8.11.3"
+  }
+}
