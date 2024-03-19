@@ -23,5 +23,8 @@ router.post("/persist-image", persistImage.persistImage);
 router.get("/retrieve-image/:cloudinary_id", retrieveImage.retrieveImage);
 router.delete("/delete-image/:cloudinary_id", deleteImage.deleteImage);
 router.put("/update-image/:cloudinary_id", updateImage.updateImage);
+router.get("/", (req, res) => {
+  res.send("Hello World"); // or render your HTML page
+});
 
 module.exports = router;
