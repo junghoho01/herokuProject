@@ -23,8 +23,8 @@ router.post("/persist-image", persistImage.persistImage);
 router.get("/retrieve-image/:cloudinary_id", retrieveImage.retrieveImage);
 router.delete("/delete-image/:cloudinary_id", deleteImage.deleteImage);
 router.put("/update-image/:cloudinary_id", updateImage.updateImage);
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+router.get("/", (req, res) => {
+  res.send("Lim Yi Ying is a bullshit"); // or render your HTML page
 });
 
 module.exports = router;
